@@ -8,3 +8,5 @@
 
  - SEC_KEY = Your Flutterwave account's secret key
  - PHONE_NO = The phone number you want to recharge
+
+ ### For more information checkout [Docs  Reference](https://developer.flutterwave.com/reference#validate-bill-service)
