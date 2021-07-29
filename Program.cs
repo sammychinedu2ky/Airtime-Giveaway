@@ -12,26 +12,29 @@ namespace airtimegiveaway
 
         static string  BASE_API_URL = "https://api.flutterwave.com/v3/bills";
         static string SEC_KEY = "Your Secret Key";
+        static string PHONE_NO = "Your phone number";
+
+        public static object AMOUNT { get; private set; }
+
         static async Task Main(string[] args)
         {
             Guid reference = Guid.NewGuid();
-            Console.WriteLine(reference);
             try
             {
                 var payload = new
                 {
 
                     country = "NG",
-                   customer = "Your phone number",
-                        amount = 100,
+                   customer = PHONE_NO,
+                        amount = AMOUNT,
                         recurrence = "ONCE",
                         type = "AIRTIME",
                         reference = reference
                 };
                
 
-                string json = JsonSerializer.Serialize(payload);
-                HttpContent content = new StringContent(json);
+                string serializedPayload = JsonSerializer.Serialize(payload);
+                HttpContent content = new StringContent(serializedPayload);
                 content.Headers.ContentType.MediaType = "application/json";
                 client.DefaultRequestHeaders.Authorization=  new AuthenticationHeaderValue("Bearer", SEC_KEY);
                 HttpResponseMessage response = await client.PostAsync(BASE_API_URL, content);
