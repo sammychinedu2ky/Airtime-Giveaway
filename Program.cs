@@ -26,7 +26,7 @@ namespace airtimegiveaway
                     {
 
                         country = "NG",
-                        customer = PHONE_NO,
+                        customer = num,
                         amount = AMOUNT,
                         recurrence = "ONCE",
                         type = "AIRTIME",
