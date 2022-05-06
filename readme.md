@@ -1,6 +1,6 @@
 # AIRTIME AUTOMATION
  
- This code contains a sample console application for automating the sending of airtime using Flutterwave.
+ This code contains a sample console application for automating the sending of airtime to a list of numbers using Flutterwave API.
 
  It is written in C#
 
