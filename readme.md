@@ -12,3 +12,4 @@
  ### For more information checkout [Docs  Reference](https://developer.flutterwave.com/reference#validate-bill-service)
  
  NB:- It requires that you have a funded Flutterwave account
+ Feel free to contribute 😅
