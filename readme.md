@@ -10,4 +10,5 @@
  - PHONE_NO = An array of strings of phone numbers
 
  ### For more information checkout [Docs  Reference](https://developer.flutterwave.com/reference#validate-bill-service)
- ### NB:- It requires that you have a Funded flutterwave account
+ 
+ NB:- It requires that you have a funded Flutterwave account
