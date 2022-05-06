@@ -13,6 +13,7 @@ namespace airtimegiveaway
         static string BASE_API_URL = "https://api.flutterwave.com/v3/bills";
         static string SEC_KEY = "secret-key";
         static string[] PHONE_NO = { };
+        // you can change it to any amount, I chose 200 as default
         static int AMOUNT = 200;
 
         static async Task Main(string[] args)
